@@ -55,7 +55,7 @@
 
       <nav class="light-blue lighten-1" role="navigation">
           <div class="nav-wrapper container">
-              <a id="logo-container" href="{{ HOME_PATH }}" class="brand-logo">{{ site.title }}</a>
+              <a id="logo-container" href="{{ site.baseurl }}" class="brand-logo">{{ site.title }}</a>
               <ul class="right hide-on-med-and-down">
                   {% assign pages_list = site.pages | sort: 'position' %}
                   {% assign group = 'navigation' %}

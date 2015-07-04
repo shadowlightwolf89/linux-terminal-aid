@@ -5,7 +5,7 @@
 
         <div class="right-align pagination-group">
             {% if page.previous %}
-                <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                <a href="{{ site.baseurl }}{{ page.previous.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
                     &larr; <span lang="PREVIOUS_BTN"></span>
                 </a>
             {% else %}
@@ -13,9 +13,9 @@
                 &larr; <span lang="PREVIOUS_BTN"></span>
             </a>
             {% endif %}
-                <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue" style="border-radius: 0;" lang="ARCHIVE_BTN"></a>
+                <a href="{{ site.baseurl }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue" style="border-radius: 0;" lang="ARCHIVE_BTN"></a>
             {% if page.next %}
-                <a href="{{ BASE_PATH }}{{ page.next.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                <a href="{{ site.baseurl }}{{ page.next.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
                     <span lang="NEXT_BTN"></span> &rarr;
                 </a>
             {% else %}
@@ -47,7 +47,7 @@
                     <hr>
                     {% unless page.categories == empty %}
                       {% for category in page.categories %}
-                      <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref" class="waves-effect waves-light btn tag deep-orange">
+                      <a href="{{ site.baseurl }}{{ site.JB.categories_path }}#{{ category }}-ref" class="waves-effect waves-light btn tag deep-orange">
                           {{ category | join: "/" }}&nbsp;{{ site.categories[category].size }}
                       </a>
                       {% endfor %}
@@ -63,7 +63,7 @@
                     <hr>
                     {% unless page.tags == empty %}
                       {% for tag in page.tags %}
-                      <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" class="waves-effect waves-light btn tag deep-orange">
+                      <a href="{{ site.baseurl }}{{ site.JB.tags_path }}#{{ tag }}-ref" class="waves-effect waves-light btn tag deep-orange">
                           {{ tag | join: "/" }}&nbsp;{{ site.tags[tag].size }}
                       </a>
                       {% endfor %}

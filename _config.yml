@@ -1,7 +1,7 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title
-
+baseurl: /linux-terminal-aid
 exclude: ["README.md", "Rakefile"]
 
 markdown: kramdown
@@ -28,7 +28,7 @@ author :
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
-# Most places will/should use BASE_PATH to make the urls
+# Most places will/should use site.baseurl to make the urls
 #
 # If you have set a CNAME (pages.github.com) set your custom domain here.
 # Else if you are pushing to username.github.io, replace with your username.
@@ -41,32 +41,32 @@ production_url : http://shadowlightwolf89.github.io/linux-terminal-aid
 JB :
   version : 0.3.0
 
-  # All links will be namespaced by BASE_PATH if defined.
-  # Links in your website should always be prefixed with {{BASE_PATH}}
+  # All links will be namespaced by site.baseurl if defined.
+  # Links in your website should always be prefixed with {{site.baseurl}}
   # however this value will be dynamically changed depending on your deployment situation.
   #
   # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH
+  #   DO NOT SET site.baseurl
   #   (urls will be prefixed with "/" and work relatively)
   #
   # GitHub Pages (http://username.github.io)
-  #   DO NOT SET BASE_PATH
+  #   DO NOT SET site.baseurl
   #   (urls will be prefixed with "/" and work relatively)
   #
   # GitHub Project Pages (http://username.github.io/project-name)
   #
   #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
-  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
+  #  REQUIRED! Set site.baseurl to: http://username.github.io/project-name
   #
   # CAUTION:
-  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
+  #   - When in Localhost, your site will run from root "/" regardless of site.baseurl
   #   - Only the following values are falsy: ["", null, false]
-  #   - When setting BASE_PATH it must be a valid url.
+  #   - When setting site.baseurl it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
   BASE_PATH : http://shadowlightwolf89.github.io/linux-terminal-aid
 
-  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
-  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
+  # By default, the asset_path is automatically defined relative to site.baseurl plus the enabled theme.
+  # ex: [site.baseurl]/assets/themes/[THEME-NAME]
   #
   # Override this by defining an absolute path to assets here.
   # ex:

@@ -27,9 +27,9 @@ Usage:
     {% if node.title != null %}
       {% if group == null or group == node.group %}
           {% if page.url == node.url %}
-          <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active" lang="{{node.title | upcase }}"></a></li>
+          <li class="active"><a href="{{ site.baseurl }}{{node.url}}" class="active" lang="{{node.title | upcase }}"></a></li>
           {% else %}
-          <li><a href="{{ BASE_PATH }}{{node.url}}" lang="{{node.title | upcase }}"></a></li>
+          <li><a href="{{ site.baseurl }}{{node.url}}" lang="{{node.title | upcase }}"></a></li>
           {% endif %}
       {% endif %}
     {% endif %}
