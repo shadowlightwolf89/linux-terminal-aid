@@ -36,14 +36,14 @@
               <span class="card-title">{{ page.title }}</span>
             </div>
             <div class="card-action blue-grey lighten-4">
-                <span lang="CREATED_ON"></span> {{ page.date | date: "%F" }}
+                <span lang="CREATED_ON">Created on:</span> {{ page.date | date: "%F" }}
             </div>
         </div>
 
         <div class="card-panel grey lighten-5 z-depth-2">
             <div class="row valign-wrapper">
                 <div class="col s12">
-                    <i class="fa fa-server fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4" lang="CATEGORIES"></strong>
+                    <i class="fa fa-server fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4" lang="CATEGORIES">Categories</strong>
                     <hr>
                     {% unless page.categories == empty %}
                       {% for category in page.categories %}
@@ -59,7 +59,7 @@
         <div class="card-panel grey lighten-5 z-depth-2">
             <div class="row valign-wrapper">
                 <div class="col s12">
-                    <i class="fa fa-flag fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4" lang="TAGS"></strong>
+                    <i class="fa fa-flag fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4" lang="TAGS">Tags</strong>
                     <hr>
                     {% unless page.tags == empty %}
                       {% for tag in page.tags %}
