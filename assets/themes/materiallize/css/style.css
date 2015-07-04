@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+.container {
+  max-width: 1920px;}
+@media only screen and (min-width : 601px) {
+  .container {
+    width: 95%; } }
+
+@media only screen and (min-width : 993px) {
+  .container {
+    width: 85%; } }
+
+@media only screen and (max-width : 600px){
+  nav .brand-logo{
+    left: 119px;
+    font-size: 25px;
+  }
+  .pagination-group{
+    text-align: center;
+  }
+  .pagination-group a{
+    padding: 0 10px;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+
+.nav-wrapper ul > li{
+  list-style-type: none;
+}
+
+#self-description .card-panel{
+    padding: 20px 5px;
+}
+#self-description .card-panel .valign-wrapper{
+    margin: 0;
+}
+#self-description .card-panel .avatar{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#self-description .card-panel .introduction{
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+#self-description .card-panel .social a{
+    margin-right: 10px;
+}
+#self-description .card-panel .social a:last-child{
+    margin-right: 0;
+}
+
+.tag {
+  margin-bottom: 5px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-transform: none; }
+
+
+ul{
+  margin-left: 17px;
+}
+
+ul > li{
+  list-style-type: disc;
+}
+
+code{
+    padding: 3px;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    color: #000;
+    font-style: italic;
+}
+pre[class*="language-"] code[class*="language-"]{
+    padding: 0;
+    background-color: transparent;
+    font-style: normal;
+    border-radius: 0;
+}
+
+pre[class*="language-"] code[class*="language-"] .tag{
+  padding: 0;
+}
+
+.archive a{
+  color: #fff;
+}
+
+.goto-top{
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+  background-color: #e8eaf6;
+  border-radius: 2px;
+  padding: 4px 8px 8px 8px;
+  z-index: 10;
+  box-shadow: 2px 2px 2px #1a237e;
+  transition: box-shadow 0.3s ease 0s;
+  -moz-transition: box-shadow 0.3s ease 0s;
+  -webkit-transition: box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
+}
+
+.goto-top:hover{
+  box-shadow: 5px 5px 5px #1a237e;
+}
+
+.mod-no-flexbox .valign-wrapper,
+.wechat .valign-wrapper{
+    display: block;
+}
