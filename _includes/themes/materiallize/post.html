@@ -6,25 +6,25 @@
         <div class="right-align pagination-group">
             {% if page.previous %}
                 <a href="{{ site.baseurl }}{{ page.previous.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
-                    &larr; <span lang="PREVIOUS_BTN"></span>
+                    &larr; Previous <span lang="PREVIOUS_BTN"></span>
                 </a>
             {% else %}
             <a class="btn disabled" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
-                &larr; <span lang="PREVIOUS_BTN"></span>
+                &larr; Previous <span lang="PREVIOUS_BTN"></span>
             </a>
             {% endif %}
-                <a href="{{ site.baseurl }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue" style="border-radius: 0;" lang="ARCHIVE_BTN"></a>
+                <a href="{{ site.baseurl }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue" style="border-radius: 0;" lang="ARCHIVE_BTN">Arhives</a>
             {% if page.next %}
                 <a href="{{ site.baseurl }}{{ page.next.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                    <span lang="NEXT_BTN"></span> &rarr;
+                    <span lang="NEXT_BTN">Next</span> &rarr;
                 </a>
             {% else %}
                 <a class="btn disabled" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                    <span lang="NEXT_BTN"></span> &rarr;
+                    <span lang="NEXT_BTN">Next</span> &rarr;
                 </a>
             {% endif %}
         </div>
-        
+
         <br/>
         <hr>
 
