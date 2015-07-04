@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="col s12 m8">
+        {% if page.tagline %}<h2><small>{{page.tagline}}</small></h2>{% endif %}
+        {{ content }}
+
+        <div class="right-align pagination-group">
+            {% if page.previous %}
+                <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                    &larr; <span lang="PREVIOUS_BTN"></span>
+                </a>
+            {% else %}
+            <a class="btn disabled" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                &larr; <span lang="PREVIOUS_BTN"></span>
+            </a>
+            {% endif %}
+                <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" class="btn waves-effect waves-light blue" style="border-radius: 0;" lang="ARCHIVE_BTN"></a>
+            {% if page.next %}
+                <a href="{{ BASE_PATH }}{{ page.next.url }}" class="btn waves-effect waves-light blue lighten-2" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                    <span lang="NEXT_BTN"></span> &rarr;
+                </a>
+            {% else %}
+                <a class="btn disabled" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                    <span lang="NEXT_BTN"></span> &rarr;
+                </a>
+            {% endif %}
+        </div>
+        
+        <br/>
+        <hr>
+
+        {% include JB/comments %}
+    </div>
+    <div class="col m4 hide-on-small-only">
+        <div class="card blue-grey darken-1 z-depth-2">
+            <div class="card-content white-text">
+              <span class="card-title">{{ page.title }}</span>
+            </div>
+            <div class="card-action blue-grey lighten-4">
+                <span lang="CREATED_ON"></span> {{ page.date | date: "%F" }}
+            </div>
+        </div>
+
+        <div class="card-panel grey lighten-5 z-depth-2">
+            <div class="row valign-wrapper">
+                <div class="col s12">
+                    <i class="fa fa-server fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4" lang="CATEGORIES"></strong>
+                    <hr>
+                    {% unless page.categories == empty %}
+                      {% for category in page.categories %}
+                      <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref" class="waves-effect waves-light btn tag deep-orange">
+                          {{ category | join: "/" }}&nbsp;{{ site.categories[category].size }}
+                      </a>
+                      {% endfor %}
+                    {% endunless %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card-panel grey lighten-5 z-depth-2">
+            <div class="row valign-wrapper">
+                <div class="col s12">
+                    <i class="fa fa-flag fa-lg grey-text text-darken-4"></i>&nbsp;&nbsp;<strong class="grey-text text-darken-4" lang="TAGS"></strong>
+                    <hr>
+                    {% unless page.tags == empty %}
+                      {% for tag in page.tags %}
+                      <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" class="waves-effect waves-light btn tag deep-orange">
+                          {{ tag | join: "/" }}&nbsp;{{ site.tags[tag].size }}
+                      </a>
+                      {% endfor %}
+                    {% endunless %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

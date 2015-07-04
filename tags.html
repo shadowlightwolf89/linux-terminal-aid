@@ -1,0 +1,19 @@
+---
+layout: page
+title: Tags
+header: Posts By Tag
+group: navigation
+position: 4
+---
+{% include JB/setup %}
+
+
+{% for tag in site.tags %}
+<div class="card-panel purple darken-4 z-depth-1 white-text archive">
+  <h5 id="{{ tag[0] }}-ref">{{ tag[0] }}</h5>
+  <ul>
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  </ul>
+</div>
+{% endfor %}

@@ -1,0 +1,35 @@
+# static engine of your blog
+siteEngine: "jekyll"
+# root directory of your blog
+siteLocalDir: "/home/shadowlightwolf/.projects/local/linux-terminal-aid-jekyll"
+# directory to drafts from the root of siteLocalDir
+siteDraftsDir: "_drafts/"
+# directory to posts from the root of siteLocalDir
+sitePostsDir: "_posts/"
+# directory to images from the root of siteLocalDir
+siteImagesDir: "images/{year}/"
+# URL to your blog
+siteUrl: "http://shadowlightwolf89.github.io/linux-terminal-aid-jekyll/"
+# URLs to tags/posts/categories JSON file
+urlForTags: "http://shadowlightwolf89.github.io/linux-terminal-aid-jekyll/tags.json"
+urlForPosts: "http://shadowlightwolf89.github.io/linux-terminal-aid-jekyll/posts.json"
+urlForCategories: "http://shadowlightwolf89.github.io/linux-terminal-aid-jekyll/categories.json"
+# front matter template
+frontMatter: """
+---
+layout: <layout>
+menu: true
+note: false
+title: '<title>'
+date: <date>
+---
+"""
+# use Jekyll highlight code block
+# change this requires reload, shift-cmd-P -> Window Reload
+  'codeblock':
+    'before': '{% highlight %}\n'
+    'after': '\n{% endhighlight %}'
+    'regexBefore': '{% highlight(?: .+)? %}\n'
+    'regexAfter': '\n{% endhighlight %}'
+  # use Octopress img tag
+  'imageTag': "{% img <align> <src> <width> <height> '{alt}' %}"
