@@ -1,17 +1,5 @@
 {
     "posts": [
         
-        {
-            "title": "Welcome to Jekyll!",
-            "url": "/jekyll/update/2015/07/04/welcome-to-jekyll",
-            "date": "2015-07-04T03:49:24-06:00"
-        },
-        
-        {
-            "title": "Theme Introduction",
-            "url": "/tutorial/2015/04/10/theme-introduction",
-            "date": "2015-04-10T00:00:00-06:00"
-        }
-        
     ]
 }
