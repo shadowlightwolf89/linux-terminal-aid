@@ -1,6 +1,6 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: pretty
+permalink: /:short_year/:i_month/:i_day/:title
 baseurl: /linux-terminal-aid
 exclude: ["README.md", "Rakefile", "CONTRIBUTING.md", "LICENSE"]
 use_post_dirs: false
