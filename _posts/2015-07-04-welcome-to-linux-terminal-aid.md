@@ -3,7 +3,7 @@ layout: post
 title: Welcome to Linux Terminal Aid
 tagline: Short and Sweet
 date: '2015-07-04 18:22'
-category: none
+category: update
 tags:
   - welcome
   - introduction
