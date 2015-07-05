@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title
 baseurl: /linux-terminal-aid
-exclude: ["README.md", "Rakefile"]
+exclude: ["README.md", "Rakefile", "CONTRIBUTING.md", "LICENSE"]
 
 markdown: kramdown
 kramdown:
