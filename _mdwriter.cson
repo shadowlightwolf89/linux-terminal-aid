@@ -1,7 +1,7 @@
 # static engine of your blog
 siteEngine: "jekyll"
 # root directory of your blog
-siteLocalDir: "/home/shadowlightwolf/.projects/local/linux-terminal-aid"
+siteLocalDir: "/home/shadowlightwolf/.projects/remote/github/personal/linux-terminal-aid"
 # directory to drafts from the root of siteLocalDir
 siteDraftsDir: "_drafts/"
 # directory to posts from the root of siteLocalDir
@@ -21,13 +21,13 @@ layout: <layout>
 title: '<title>'
 tagline:
 date: <date>
-category: [<category>]
-tags: [<tags>]
+category:
+tags: []
 shortContent:
 ---
 """
 # use Jekyll highlight code block
-# change this requires reload, shift-cmd-P -> Window Reload
+# change to this requires reload, shift-cmd-P -> Window Reload
 'codeblock':
   'before': '{% highlight %}\n'
   'after': '\n{% endhighlight %}'
