@@ -2,8 +2,14 @@
     "posts": [
         
         {
+            "title": "Setting up the Linux Terminal",
+            "url": "/terminal/2015/07/04/setting-up-the-terminal",
+            "date": "2015-07-04T18:55:00-06:00"
+        },
+        
+        {
             "title": "Welcome to Linux Terminal Aid",
-            "url": "/none/2015/07/04/welcome-to-linux-terminal-aid",
+            "url": "/update/2015/07/04/welcome-to-linux-terminal-aid",
             "date": "2015-07-04T18:22:00-06:00"
         }
         
