@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "Updates and Going Away",
+            "url": "/update/2015/07/05/updates-and-going-away",
+            "date": "2015-07-05T07:27:00-06:00"
+        },
+        
+        {
             "title": "Setting up the Linux Terminal",
             "url": "/terminal/linux/2015/07/04/setting-up-the-terminal",
             "date": "2015-07-04T18:55:00-06:00"
