@@ -10,6 +10,7 @@ tags:
   - how-to
 shortContent: "A short and sweet introduction to both the blog and it's author."
 ---
+{% include JB/setup %}
 
 Hey! Welcome to my blog, I hope you like the design, I may not have written it from scratch, but I did modify it, and whew it took a while to get it right.
 

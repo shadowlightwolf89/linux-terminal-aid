@@ -46,7 +46,19 @@
         </div>
       </div>
     </div>
-
+    <div class="card-panel grey lighten-5 z-depth-1">
+      <div class="row valign-wrapper">
+        <div class="col s8">
+          <i class="fa fa-line-chart"></i>&nbsp;
+          <strong lang="PAGES"></strong>
+        </div>
+        <div class="col s4 right-align">
+          <span class="black-text">
+            {% assign pages_list = site.pages | sort: 'position' %} {% assign group = 'pagelist' %} {% include JB/pages_list %}
+          </span>
+        </div>
+      </div>
+    </div>
     <div class="card-panel grey lighten-5 z-depth-1">
       <div class="row valign-wrapper">
         <div class="col s8">
@@ -121,11 +133,26 @@
       <div class="row valign-wrapper">
         <div class="col s12">
           <i class="fa fa-line-chart"></i>&nbsp;
+          <strong>Pages</strong>
+        </div>
+      </div>
+      <div class="row valign-wrapper">
+        <div class="col s12">
+          <ul class="list-unstyled">
+            {% assign pages_list = site.pages | sort: 'position' %} {% assign group = 'pagelist' %} {% include JB/pages_list %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card-panel grey lighten-5 z-depth-1">
+      <div class="row valign-wrapper">
+        <div class="col s12">
+          <i class="fa fa-line-chart"></i>&nbsp;
           <strong>Blog Categories</strong>
         </div>
       </div>
       <div class="row valign-wrapper">
-        <div class="col s8">
+        <div class="col s12">
           <ul class="list-unstyled">
             {% assign categories_list = site.categories %} {% include JB/categories_list %}
           </ul>

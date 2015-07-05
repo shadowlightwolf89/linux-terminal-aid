@@ -25,6 +25,7 @@ category:
 tags: []
 shortContent:
 ---
+{% include JB/setup %}
 """
 # use Jekyll highlight code block
 # change to this requires reload, shift-cmd-P -> Window Reload

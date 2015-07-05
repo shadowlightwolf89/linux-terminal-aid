@@ -9,6 +9,7 @@ tags:
   - absence
 shortContent: "I'll be taking a 30 day leave of absence starting Monday, July 6th 2015."
 ---
+{% include JB/setup %}
 
 I've updated the blog to include a special 404 page, it's not Linux related thoug, it's actually for windows, since it's a Blue Screen of Death. Also, just wanted to remind people that I'll be gone for 30 days starting tomorrow due to the fact that I'm moving.
 
