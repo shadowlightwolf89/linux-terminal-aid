@@ -15,6 +15,8 @@ Hey! Welcome to my blog, I hope you like the design, I may not have written it f
 
 Actually, that's part of why I'm writing this blog, because sometimes, you just need to know the right terminal command to get things to work.
 
+This post is not only an introduction, it's a how-to for the site! If you want to learn about something specific, try checking out a category or tag, it's easy enough, since I'll be sure to categorize things properly, and tag everything.
+
 Anyways, I hate to create and run, but I've got packing to do, I'm moving on the 6th, and I'm afraid I won't have internet for 30 days thereafter.
 
 Hope to write again soon!
