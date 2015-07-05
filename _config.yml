@@ -3,7 +3,7 @@
 permalink: /:short_year/:i_month/:i_day/:title
 baseurl: /linux-terminal-aid
 exclude: ["README.md", "Rakefile", "CONTRIBUTING.md", "LICENSE"]
-use_post_dirs: false
+use_post_dirs: true
 
 markdown: kramdown
 kramdown:
