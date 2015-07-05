@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: page
 title: Home
 tagline: "There's no place like ~/"
 group: navigation
