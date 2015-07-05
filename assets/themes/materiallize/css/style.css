@@ -73,8 +73,12 @@ ul{
   margin-left: 17px;
 }
 
-ul > li{
+`ul > li{
   list-style-type: disc;
+}
+
+ul.list-unstyled > li{
+  list-style-type: none;
 }
 
 code{
